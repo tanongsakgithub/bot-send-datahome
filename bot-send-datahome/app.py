@@ -22,9 +22,7 @@ from linebot.models import (
 
 app = Flask(__name__)
 
-#line_bot_api = LineBotApi('e5sYbrVqzr0tkoMGNG7ms8B0BuUkapnhrmmmGxDVzdqtI6b5wvQc9myz9XpjR5nBNBxchy7729fXYpeXmcsouJeRyEidg21ElCGhLRdpSjUUOivAwvgpD1sHr0d0gjmIhI3DowzNCL1kDmbJA2xf2wdB04t89/1O/w1cDnyilFU=')
-#handler = WebhookHandler('90cce9d14066c6c5883511a709e04add')
-#pushtoken = 'C6d9394a0015fd1f563380be10e35dada' #grouplineID
+
 pushtoken = os.environ['LINE_GROUP_ID']
 line_bot_api = LineBotApi(os.environ['YOUR_CHANNEL_ACCESS_TOKEN'])
 handler = WebhookHandler(os.environ['YOUR_CHANNEL_SECRET'])

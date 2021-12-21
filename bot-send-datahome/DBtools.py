@@ -4,7 +4,6 @@ import json
 import time
 from psycopg2 import sql
 DATABASE_URL = os.environ['DATABASE_URL']
-#DATABASE_URL = "postgres://oojklvlvpoqxsh:5274c2b5bf702997fa25b8c7d92f252cdc7885284467bf97da2afa72e470ddb6@ec2-18-211-97-89.compute-1.amazonaws.com:5432/d9h18d2emkk6jd"
 def CheckTableEmpty(tablename):
 	conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 	cur = conn.cursor()
